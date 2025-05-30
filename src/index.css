@@ -3,6 +3,3 @@
 @tailwind utilities;
 
 
-body {
-    @apply bg-lime text-black dark:bg-[#1a1a1a] dark:text-white;
-  }

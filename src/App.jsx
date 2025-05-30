@@ -10,14 +10,14 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <>
+    <div className={`App dark:bg-dark-bg bg-white}`}>
     <Header/>
     <Hero/>
     <Skils/>
     <Profile/>
     <Projects/>
     <Footer/>
-    </>
+    </div>
   )
 }
 
