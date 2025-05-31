@@ -1,8 +1,11 @@
+import { useLanguage } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
-import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
 
 export default function Header() {
   const { isDarkMode, toggleTheme } = useTheme();
+  const { toggleLanguage, data } = useLanguage();
+  
+  const {header} = data;
   
   return (
     <header className='flex flex-col max-w-[80%] xl:max-w-6xl m-auto justify-between'>
@@ -20,13 +23,13 @@ export default function Header() {
             </div>
 
             <span className='dark:text-light-mode text-gray-dark font-medium tracking-wider'>
-                {isDarkMode ? "light" : "dark"}
+                {isDarkMode ? header.lightMode : header.darkMode}
             </span>
 
             <span className="text-gray-dark">|</span>
 
-            <a href="#"  className='dark:text-lilac text-toggle-purple font-medium tracking-wider'>
-                dil
+            <a href="#" onClick={toggleLanguage} className='dark:text-lilac text-toggle-purple font-medium tracking-wider'>
+                {header.language}
             </a>
         </div>
 
@@ -37,9 +40,9 @@ export default function Header() {
                 <span className='dark:text-dark-logo-font text-logo-purple transform rotate-45'>A</span>
             </div>
             <nav className="flex items-center space-x-2 lg:space-x-16 ml-auto">
-                <a href="#"  className='text-gray'>skills</a>
-                <a href="#"  className='text-gray'>projects</a>
-                <a href="#" className='text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white'>hire me</a>
+                <a href="#"  className='text-gray'>{header.skills}</a>
+                <a href="#"  className='text-gray'>{header.projects}</a>
+                <a href="#" className='text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white'>{header.hireMe}</a>
             </nav>
         </div>
     </header>

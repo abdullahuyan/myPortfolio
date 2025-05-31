@@ -1,55 +1,9 @@
+import { useLanguage } from "../context/LanguageContext";
+
 function Projects() {
-
-  const projects =  {
-    "title": "Projeler",
-    "items": [
-        {
-            "title": "Workintech",
-            "image": "",
-            "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
-            "technologies": [
-                "react",
-                "redux",
-                "axios"
-            ],
-            "github": "Github",
-            "githubLink": "",
-            "viewSiteLabel": "Siteyi Görüntüleyin",
-            "viewSiteLink": ""
-            
-        },
-        {
-            "title": "Random Jokes",
-            "image": "",
-            "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
-            "technologies": [
-                "react",
-                "redux",
-                "axios"
-            ],
-            "github": "Github",
-            "githubLink": "",
-            "viewSiteLabel": "Siteyi Görüntüleyin",
-            "viewSiteLink": ""
-        },
-        {
-            "title": "Journey",
-            "image": "",
-            "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
-            "technologies": [
-                "react",
-                "redux",
-                "axios"
-            ],
-            "github": "Github",
-            "githubLink": "",
-            "viewSiteLabel": "Siteyi Görüntüleyin",
-            "viewSiteLink": ""
-        }
-    ]
-};
-
-const {title, items} = projects;
+  const { data } = useLanguage();
+  const {projects}=data;
+  const {title, items} = projects;
 
     return (
       <div id="projects" className="text-left max-w-[80%] xl:max-w-6xl m-auto place-content-between">

@@ -1,10 +1,9 @@
+import { useLanguage } from "../context/LanguageContext";
+
 function Footer() {
-  const contacts = {
-    title:"Send me a message!",
-    desc:"Got a question or proposal, or just want to say hello? Go ahead.",
-    email:"uyanabdullah0@gmail.com",
-    socials:{personalBlog:"", github:"", linkedin:""}
-  };
+  const { data } = useLanguage();
+  const {contacts}=data;
+  
 
     return (
       <footer id="footer" className="bg-gray-light dark:bg-dark-footer-bg w-full">
