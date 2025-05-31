@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react';
+import { createContext, useContext, useEffect } from 'react';
 import useLocalStorage from '../hooks/useLocalStorage';
 
 const ThemeContext = createContext();
@@ -8,9 +8,15 @@ export const ThemeProvider = ({ children }) => {
   
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle('dark', !isDarkMode);
   };
-
+   // Sayfa yüklendiğinde tema sınıfını güncelle
+   useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [isDarkMode]);
   return (
     <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
       {children}

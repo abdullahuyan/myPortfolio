@@ -1,4 +1,5 @@
 import { useLanguage } from "../context/LanguageContext";
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 function Hero() {
     const { data } = useLanguage();
@@ -17,8 +18,8 @@ function Hero() {
                     >
                         {hero.hireMe}
                     </button>
-                    <a href={hero.links.github} className={'text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-32 xl:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button'}>Github</a>
-                    <a href={hero.links.linkedin} className={'inline-flex text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-30 xl:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button'}>Linkedin</a>
+                    <a href={hero.links.github} className={'inline-flex gap-2 text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-32 xl:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button'}><FaGithub size={24} />Github</a>
+                    <a href={hero.links.linkedin} className={'inline-flex gap-2 text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-30 xl:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button'}><FaLinkedinIn size={24} /> Linkedin</a>
                 </nav>
             </div>
             <img className="rounded-2xl mt-8 lg:mt-0 max-w-[476px] max-h-[375px]" src={hero.img} />
