@@ -14,7 +14,7 @@ export const data = {
       desc2: "Minimalizm tutkunu",
       desc3: "Merhaba, ben Abdullah. Full-stack geliştiricisiyim. Sağlam ve ölçeklenebilir frontend ürünleri geliştirip harika kullanıcı deneyimleri sunabilecek bir geliştirici arıyorsanız, tanışalım.",
       hireMe: "İletişim",
-      img: "src/assets/heroimage.jpg",
+      img: "/heroimage.jpg",
       links: {
         github: "https://github.com/abdullahuyan",
         linkedin: "https://www.linkedin.com/in/abdullahuyan/"
@@ -60,7 +60,7 @@ export const data = {
       items: [
           {
               title: "Workintech",
-              image: "src/assets/project1.jpg",
+              image: "/project1.jpg",
               description: "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
               technologies: [
                   "react",
@@ -75,7 +75,7 @@ export const data = {
           },
           {
               title: "Random Jokes",
-              image: "src/assets/project2.jpg",
+              image: "/project2.jpg",
               description: "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
               technologies: [
                   "react",
@@ -89,7 +89,7 @@ export const data = {
           },
           {
               title: "Journey",
-              image: "src/assets/project3.jpg",
+              image: "/project3.jpg",
               description: "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
               technologies: [
                   "react",
@@ -124,7 +124,7 @@ export const data = {
         desc2: "Minimalism lover",
         desc3:"Hi, I’m Abdullah. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
         hireMe:"Hire Me",
-        img: "src/assets/heroimage.jpg",
+        img: "/heroimage.jpg",
         links:{github: "https://github.com/abdullahuyan", linkedin: "https://www.linkedin.com/in/abdullahuyan/"}
       },
       skills:{
@@ -164,7 +164,7 @@ export const data = {
       items: [
           {
               title: "Workintech",
-              image: "src/assets/project1.jpg",
+              image: "/project1.jpg",
               description:"A simple, customizable cookie plugin that allows your users to choose which cookies to accept or reject. Built with Vanilla JS, SCSS, and Parcel Bundler, it requires minimal setup. Offered as an NPM package, and the Git repository allows full customization of code and themes.",
               technologies: [
                   "react",
@@ -179,7 +179,7 @@ export const data = {
           },
           {
               title: "Random Jokes",
-              image: "src/assets/project2.jpg",
+              image: "/project2.jpg",
               description:"A simple, customizable cookie plugin that allows your users to choose which cookies to accept or reject. Built with Vanilla JS, SCSS, and Parcel Bundler, it requires minimal setup. Offered as an NPM package, and the Git repository allows full customization of code and themes.",
               technologies: [
                   "react",
@@ -193,7 +193,7 @@ export const data = {
           },
           {
               title: "Journey",
-              image: "src/assets/project3.jpg",
+              image: "/project3.jpg",
               description:"A simple, customizable cookie plugin that allows your users to choose which cookies to accept or reject. Built with Vanilla JS, SCSS, and Parcel Bundler, it requires minimal setup. Offered as an NPM package, and the Git repository allows full customization of code and themes.",
               technologies: [
                   "react",
