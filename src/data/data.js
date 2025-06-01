@@ -14,7 +14,7 @@ export const data = {
       desc2: "Minimalizm tutkunu",
       desc3: "Merhaba, ben Abdullah. Full-stack geliştiricisiyim. Sağlam ve ölçeklenebilir frontend ürünleri geliştirip harika kullanıcı deneyimleri sunabilecek bir geliştirici arıyorsanız, tanışalım.",
       hireMe: "İletişim",
-      img: "src/assets/heroimg.jpg",
+      img: "src/assets/heroimage.jpg",
       links: {
         github: "https://github.com/abdullahuyan",
         linkedin: "https://www.linkedin.com/in/abdullahuyan/"
@@ -124,7 +124,7 @@ export const data = {
         desc2: "Minimalism lover",
         desc3:"Hi, I’m Abdullah. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
         hireMe:"Hire Me",
-        img: "src/assets/heroimg.jpg",
+        img: "src/assets/heroimage.jpg",
         links:{github: "https://github.com/abdullahuyan", linkedin: "https://www.linkedin.com/in/abdullahuyan/"}
       },
       skills:{
